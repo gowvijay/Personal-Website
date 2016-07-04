@@ -6,6 +6,11 @@ html, body, h1, h2, h3, h4, p, div, ul, ol, li {
   font-size: 100%;
 }
 
+a {
+  text-decoration:none;
+  color:black;
+}
+
 html {
   position:relative;
   min-height:100%;
@@ -45,6 +50,10 @@ h2 {
   float:left;
 }
 
+.logo:hover {
+  background-color: #f8b263;
+}
+
 .contentWrapper {
   height: 800px;
   /*background-color: #eaa897; */
@@ -57,11 +66,6 @@ ul {
 
 }
 
-li
-{
-float:left;
-}
-
 .navigation {
   display:inline;
 }
@@ -72,7 +76,17 @@ float:left;
   margin-left: 30px;
   font-size:20px;
   font-family: "Helvetica Neue", Helvetica, sans-serif;
-  margin-top: 65px;
+  top: 65px;
+  position: absolute;
+}
+
+.navigationLink:hover {
+  color: #efcd9b;
+  text-decoration:underline;
+}
+
+.navigation .resumeLink {
+  left: 370px;
 }
 
 .seaImageContainer {
@@ -90,18 +104,16 @@ float:left;
 }
 
 .sidePicture {
-  float: left;
-  display:inline;
+  position:absolute;
 }
 
 .sidePicture img {
-  /*max-height: 700px; */
   max-width:275px;
 }
 
 .sidePictureRight {
-  float:right;
-  display:inline;
+  position:absolute;
+  right:0;
 }
 
 .sidePictureRight img {
@@ -111,31 +123,16 @@ float:left;
 .sagrada1{
   display:block;
 }
-/*
-.sagrada2{
-  display:none;
-}
-
-@media only screen and (min-height: 600px){ //some value
-   .sagrada1{
-     display: none;
-   }
-
-   .sagrada2{
-     display: block;
-   }
- }
-*/
 
 .content {
 
 }
 
 .about {
-  position:relative;;
   top: 50px;
-  left:6%;
-  display:inline;
+  margin:0 auto;
+  text-align: center;
+  padding:30px 0;
 
 }
 
@@ -143,19 +140,18 @@ float:left;
   font-size:30px;
   color: rgb(107, 77, 69);
   display:inline;
+  padding:20px 0;
 }
 .introContent, .hobbies {
   color: rgb(107, 77, 69);
-  margin: 15px 100px;
   max-width:600px;
   font-size:18px;
+  margin:20px auto;
 }
 
 .gowthamPic {
   max-width:400px;
-  float:right;
-  margin-top: 50px;
-  margin-right: 5%;
+  margin-top: 30px;
 }
 
 footer {
@@ -175,39 +171,110 @@ footer {
   position:relative;
 }
 
-/*OMG, this works!!*/
-@media all and (max-width: 500px) {
-  h1 {
-    font-size: 10px;
-  }
-}
 
 @media all and (max-width: 1550px) {
   .gowthamPic {
     max-width:300px;
-    margin-right:6%;
-    margin-top: 70px;
+    /*margin-right:6%; */
   }
 }
 
 @media all and (max-width: 1450px) {
   .gowthamPic {
     max-width:300px;
-    margin-right:4%;
-    margin-top: 70px;
+    /*margin-right:4%;*/
   }
 }
 
 @media all and (max-width: 1300px) {
   .gowthamPic {
-    display:block;
-    float:none;
-    margin-top:10px;
   }
   .about {
-    top: 25px; 
+    top: 25px;
   }
 }
+
+@media all and (max-width: 1150px) {
+  .sidePictureRight {
+    display:none;
+  }
+  .about {
+    margin-left:30%;
+  }
+}
+
+@media all and (max-width: 880px) {
+  .sidePictureRight {
+    display:none;
+  }
+
+  .sidePicture {
+    display:none;
+  }
+
+  .about {
+    margin-left: 0;
+  }
+}
+
+@media all and (max-width: 620px) {
+  .about {
+    margin-left:5%;
+    width:90%;
+  }
+  .gowthamPic {
+    margin-top: 10px;
+  }
+}
+
+@media all and (max-width: 470px) {
+  .navigation {
+    display:block;
+  }
+  .navigationLink {
+    margin-top: 55px;
+  }
+
+  .logo {
+    position:absolute;
+    z-index:5;
+    left:0;
+    right:0;
+    margin:auto;
+  }
+
+  header {
+    height:160px;
+  }
+  .seaImageContainer{
+    height:300px;
+  }
+
+  .seaImageContainer img {
+    height: 106px;
+    max-height:106px;
+  }
+
+  .aboutLink {
+    position:absolute;
+    left:25%;
+  }
+
+  .navigationLink {
+    margin-left:0;
+  }
+
+  .resumeLink {
+    right:25%;
+    left:auto !important;
+  }
+
+  .gowthamPic {
+    max-width:225px;
+  }
+
+}
+
 /*
 @media all and (max-width: 1450px) {
   .gowthamPic {
