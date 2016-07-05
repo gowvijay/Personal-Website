@@ -124,10 +124,6 @@ ul {
   display:block;
 }
 
-.content {
-
-}
-
 .about {
   top: 50px;
   margin:0 auto;
@@ -159,16 +155,29 @@ footer {
   bottom: 0;
   left: 0;
   right: 0;
-  height:12%;
+  height:16%;
   background-color: #473421;
+}
+
+footer .logos {
+  top: 20%;
+  text-align:center;
+  margin-top: 30px;
+}
+
+footer .logos a {
+  margin: 0 1px;
+}
+
+footer .logos a img {
+  max-width:29px;
 }
 
 .footerText {
   font-family: verdana, sans-serif;
   color: #dfd0af;
   text-align:center;
-  top:40%;
-  position:relative;
+  margin-top: 15px;
 }
 
 
