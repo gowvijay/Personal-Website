@@ -143,11 +143,12 @@ ul {
   max-width:600px;
   font-size:18px;
   margin:20px auto;
+  text-align:left;
 }
 
 .gowthamPic {
-  max-width:400px;
-  margin-top: 30px;
+  max-width:350px;
+  margin-top: 10px;
 }
 
 footer {
@@ -181,28 +182,6 @@ footer .logos a img {
 }
 
 
-@media all and (max-width: 1550px) {
-  .gowthamPic {
-    max-width:300px;
-    /*margin-right:6%; */
-  }
-}
-
-@media all and (max-width: 1450px) {
-  .gowthamPic {
-    max-width:300px;
-    /*margin-right:4%;*/
-  }
-}
-
-@media all and (max-width: 1300px) {
-  .gowthamPic {
-  }
-  .about {
-    top: 25px;
-  }
-}
-
 @media all and (max-width: 1150px) {
   .sidePictureRight {
     display:none;
@@ -224,6 +203,11 @@ footer .logos a img {
   .about {
     margin-left: 0;
   }
+
+  .gowthamPic {
+    max-width:300px;
+  }
+
 }
 
 @media all and (max-width: 620px) {
