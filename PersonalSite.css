@@ -6,6 +6,10 @@ html, body, h1, h2, h3, h4, p, div, ul, ol, li {
   font-size: 100%;
 }
 
+li {
+  list-style: none;
+}
+
 a {
   text-decoration:none;
   color:black;
@@ -181,7 +185,6 @@ footer .logos a img {
   margin-top: 15px;
 }
 
-
 @media all and (max-width: 1150px) {
   .sidePictureRight {
     display:none;
@@ -265,21 +268,48 @@ footer .logos a img {
   .gowthamPic {
     max-width:225px;
   }
+}
+
+/* Resume page specific */
+.resume {
+  /*font-size: 100px;
+  text-align:center; */
+  margin:0px auto;
+  width: 50%;
+  height: 600px;
+  overflow:auto;
+  background-color: pink;
+}
+
+.resume h3 {
+  font-size: 45px;
+  margin: 20px 30px;
+  font-family: Tahoma, Geneva, sans-serif;
+}
+
+.resume .level {
+  width: 180px;
+  margin: 10px 25px;
+  text-align:center;
+  display:inline-block;
+  vertical-align:top;
+}
+
+.resume .level li {
+  font-family: futura, arial, sans-serif;
+  text-align:center;
+  font-weight:lighter;
+  line-height:1.6;
 
 }
 
-/*
-@media all and (max-width: 1450px) {
-  .gowthamPic {
-    max-width:200px;
-    margin-top: 0;
-    display:block;
-    float:none;
-  }
-  .about h3 {
-    font-size:30px;
-    color: rgb(107, 77, 69);
-    display:inline;
-  }
+.resume h4 {
+  font-family: Didot, serif;
+  font-size: 30px;
+
 }
-*/
+
+@media all and (max-width: 620px) {
+}
+
+/* End of resume-specific styling */
