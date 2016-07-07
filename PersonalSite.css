@@ -306,7 +306,8 @@ footer .logos a img {
 .resume h4 {
   font-family: Didot, serif;
   font-size: 30px;
-
+  margin-bottom:10px;
+  border-bottom: groove red; 
 }
 
 @media all and (max-width: 620px) {
