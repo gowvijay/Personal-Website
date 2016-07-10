@@ -281,9 +281,13 @@ footer .logos a img {
   background-color: pink;
 }
 
+.section {
+  margin-bottom: 40px;
+}
+
 .resume h3 {
   font-size: 45px;
-  margin: 20px 30px;
+  margin: 30px 30px;
   font-family: Tahoma, Geneva, sans-serif;
 }
 
@@ -303,12 +307,58 @@ footer .logos a img {
 
 }
 
-.resume h4 {
+.resume h4{
   font-family: Didot, serif;
   font-size: 30px;
   margin-bottom:10px;
-  border-bottom: groove red; 
+  border-bottom: groove red;
 }
+.resume .education, .resume .job {
+  font-family: Didot, serif;
+  font-size: 20px;
+}
+
+.resume .education .college {
+  /*margin: 10px 60px; */
+  margin-left: 60px;
+  font-weight:bold;
+}
+
+.resume .education .duration {
+  margin-left: 60px;
+}
+
+.resume .education .major{
+  margin-left: 60px;
+}
+
+.resume .job {
+  margin-bottom: 60px;
+}
+
+.resume .job .title{
+  margin:0 60px;
+  font-weight: bold;
+}
+
+.resume .job .team {
+  margin:0 60px;
+}
+
+.resume .job .duration {
+  float:right;
+  margin-right: 50px; 
+}
+
+.resume .job .description {
+  margin: 25px 80px;
+  font-size:18px;
+}
+
+.resume .job .description li {
+  list-style-type: square;
+}
+
 
 @media all and (max-width: 620px) {
 }
