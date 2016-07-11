@@ -281,6 +281,7 @@ footer .logos a img {
   width: 50%;
   height: 600px;
   overflow:auto;
+  overflow-x:hidden; 
   background-color: pink;
 }
 
