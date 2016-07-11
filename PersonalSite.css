@@ -192,6 +192,11 @@ footer .logos a img {
   .about {
     margin-left:30%;
   }
+
+  .resume {
+    width: 60%;
+    margin-left: 33%;
+  }
 }
 
 @media all and (max-width: 880px) {
@@ -272,14 +277,56 @@ footer .logos a img {
 
 /* Resume page specific */
 .resume {
-  /*font-size: 100px;
-  text-align:center; */
   margin:0px auto;
   width: 50%;
   height: 600px;
   overflow:auto;
   background-color: pink;
 }
+
+.resume .scrollable {
+  position:relative;
+  left:500px;
+  top:15px;
+}
+
+/*Arrow animation*/
+@keyframes fading {
+    from {opacity: 100%; top: -10px;}
+    to {opacity: 0; top: 40px;}
+}
+
+.scrollText {
+  margin-top: 20px;
+}
+
+.arrow {
+    position: absolute;
+    animation-name: fading;
+    animation-delay: 1s;
+    animation-duration: 2s;
+    animation-iteration-count:3;
+    animation-fill-mode: forwards;
+    left: 160px;
+    z-index: 5;
+}
+
+.rectangle {
+    width: 16px;
+    height: 30px;
+    background-color: red;
+    position:relative;
+    left: 8px;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 16px solid transparent;
+    border-right: 16px solid transparent;
+    border-top: 16px solid red;
+  }
+/* End of arrow animation*/
 
 .section {
   margin-bottom: 40px;
@@ -347,12 +394,13 @@ footer .logos a img {
 
 .resume .job .duration {
   float:right;
-  margin-right: 50px; 
+  margin-right: 50px;
 }
 
 .resume .job .description {
   margin: 25px 80px;
   font-size:18px;
+  line-height:1.5;
 }
 
 .resume .job .description li {
